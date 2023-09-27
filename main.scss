@@ -39,11 +39,11 @@
 
   &__content {
     display: flex;
-    overflow: auto;
     flex-shrink: 1;
   }
 
   &__content-block {
+
     &_left {
       width: 30%;
       border-right: 1px solid #ccc;
@@ -52,6 +52,8 @@
     &_right {
       width: 70%;
       height: 100%;
+      overflow-y: scroll;
+      max-height: 300px;
     }
   }
 
